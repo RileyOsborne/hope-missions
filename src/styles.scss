@@ -1,1 +1,66 @@
+@charset "UTF-8";
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(76, 172, 188, 0.7);
+}
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #D3EBCD;
+}
+.navbar-custom .navbar-nav .nav-item:hover, .navbar-custom .navbar-nav .nav-item:focus {
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgba(76, 172, 188, 0.75);
+}
+.carousel {
+  max-height: 700px;
+  overflow: hidden;
+  border-radius: 55px 55px 55px 55px;
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+body {
+  background-color: #F7F7F7;
+}
+p, h2, h3, h4 {
+  color: #6CC4A1;
+  font-family: "Big Caslon", serif;
+}
+
+footer {
+  background-color: #4CACBC;
+}
+header {
+  position: relative;
+}
+
